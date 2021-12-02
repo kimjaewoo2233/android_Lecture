@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:layout_marginTop="40dp"
+
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="65dp"
+        android:text="로그인"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/lemon"
+        android:textColor="@color/teal_200"
+        android:layout_marginTop="90dp"
+
+         />
+
+    <EditText
+        android:id="@+id/join_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="이름"
+        android:inputType="textPersonName"
+
+      />
+
+    <EditText
+        android:id="@+id/join_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+
+ />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    >
+    <Button
+        android:id="@+id/check_button"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="로그인"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:fontFamily="@font/lemon"
+        android:background="@color/teal_200"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:layout_marginLeft="10dp"
+        android:id="@+id/delete"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="취소"
+        android:textSize="20sp"
+        android:layout_weight="1"
+        android:fontFamily="@font/lemon"
+        android:background="@color/teal_200"
+        android:textColor="@color/white"
+        />
+
+
+</LinearLayout>
+
+
+    <SlidingDrawer
+        android:id="@+id/slide"
+        android:handle = "@+id/handle"
+        android:content="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/handle"
+            android:text="test"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/teal_200"
+                android:fontFamily="@font/lemon"
+                android:textSize="35sp"
+                android:id="@+id/username"
+                android:layout_marginBottom="15dp"
+                />
+            </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/rdoCal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="날짜 설정 (캘린더뷰)"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/lemon"
+                    android:background="@color/teal_200"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="15dp"
+                    />
+
+                <Button
+                    android:id="@+id/rdoTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:text="시간 설정"
+                    android:fontFamily="@font/lemon"
+                    android:background="@color/teal_200"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="선택완료"
+                android:id="@+id/finish"
+                android:fontFamily="@font/lemon"
+                android:background="@color/teal_200"
+                android:textColor="@color/white"
+                android:layout_marginBottom="15dp"
+                android:textSize="20sp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src = "@drawable/bm"
+                android:id="@+id/image"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lemon"
+                android:id="@+id/finaltv"
+                android:textColor="@color/teal_700"
+                android:textSize="32dp"
+                />
+
+        </LinearLayout>
+
+    </SlidingDrawer>
+
+</LinearLayout>

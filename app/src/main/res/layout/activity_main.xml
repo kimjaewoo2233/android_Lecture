@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/constraint"
+    >
+
+    <androidx.appcompat.widget.Toolbar
+        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/maintext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Project"
+            android:fontFamily="@font/lemon"
+            >
+        </TextView>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:padding="15dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:text="로그인을 하세요"
+            android:textColor="#FF0000" />
+
+        <Button
+            android:id="@+id/loginbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonlink"
+            android:gravity="center|center_horizontal"
+            android:text="로그인하러가기"
+            app:layout_constraintStart_toStartOf="parent"
+
+            tools:layout_editor_absoluteY="118dp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon"
+            android:layout_marginTop="65dp"
+            android:textSize="30dp"
+            android:text="전공: 전자공학과"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon"
+            android:textSize="30dp"
+            android:text="이름: 김재우 "/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lemon"
+            android:textSize="30dp"
+            android:text="학번: 20175209"/>
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="160dp"
+            android:layout_marginRight="15sp"
+            android:src="@drawable/unnamed"
+            android:visibility="invisible"
+            app:backgroundTint="@color/white"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="90dp"
+            android:layout_marginRight="15sp"
+            android:src="@drawable/unnamed"
+            android:visibility="invisible"
+            app:backgroundTint="@color/white"
+            app:elevation="6dp"
+            app:pressedTranslationZ="12dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="15sp"
+            android:backgroundTint="@color/teal_700"
+            android:src="@drawable/unnamed" />
+
+    </FrameLayout>
+    <SlidingDrawer
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:handle="@+id/handle"
+        android:content="@+id/content"
+        android:id="@+id/slide"
+        >
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="손잡이"
+            android:id="@+id/handle"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="별점올리기"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn1"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="그림판"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn2"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="계산기"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn3"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="자동차클래스"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn4"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:visibility="invisible"
+                android:id="@+id/btn5"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7주차"
+                android:background="@drawable/buttonlink"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btn6"
+                />
+        </LinearLayout>
+    </SlidingDrawer>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

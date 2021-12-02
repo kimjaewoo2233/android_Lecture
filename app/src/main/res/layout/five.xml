@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00FF00"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="색">
+    </EditText>
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="속도">
+    </EditText>
+    <Button
+        android:id="@+id/buttonCar"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:text="객체 만들기"></Button>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:text="가속 버튼 1"></Button>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="149dp"
+        android:layout_height="64dp"
+        android:text="감속 버튼 2"></Button>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="294dp"
+        android:layout_height="62dp"
+        android:layout_weight="1"
+        android:textSize="20dp"
+        android:text="결과" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="296dp"
+        android:layout_height="93dp"
+        android:layout_weight="1"
+        android:text="결과2" />
+    <Button
+        android:id="@+id/btnReturn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="돌아가기" />
+
+</LinearLayout>
